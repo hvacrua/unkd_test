@@ -1,5 +1,7 @@
 name: 'Run my project'
-on: [commit, push]
+on:
+  commit:
+  push:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
