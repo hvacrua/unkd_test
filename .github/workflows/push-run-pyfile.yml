@@ -1,4 +1,4 @@
-name: 'Run my greeting'
+name: Run my greeting
 
 on: push
 
@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout repo content
+      - name: Checkout repo content
         uses: actions/checkout@v2 # checkout the repository content to github runner.
-      - name: setup python
+      - name: Setup python
         uses: actions/setup-python@v2
         with:
           python-version: 3.8 #install the python needed
-      - name: execute py script # run the run.py to print greeting
+      - name: Execute py script # run the run.py to print greeting
         run: |
           python run.py
